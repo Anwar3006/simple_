@@ -44,7 +44,7 @@ void _print_env(void);
 void _handle_exit(char **u_tokns, char *line);
 int execBuiltInCommands(char **u_tokns, char *line);
 void frees_get_env(char *env_path);
-void frees_tokens(char **tokns);
+void free_tokens(char **tokns);
 int exec(char *cname, char **opts);
 char *_getenv(const char *name);
 char **tokenize(char *str, char *del, int len);

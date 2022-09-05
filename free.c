@@ -22,7 +22,7 @@ void frees_get_env(char *env_path)
   *
   * Return: Nothing to returns
   */
-void frees_tokens(char **tokns)
+void free_tokens(char **tokns)
 {
 	char **temp = tokns;
 
