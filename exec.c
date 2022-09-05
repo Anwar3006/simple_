@@ -53,7 +53,7 @@ char *find(char *cname)
 					free(cname);
 					cname = _strdup(p_tokns[i]);
 					frees_get_env(env_path);
-					double_free(p_tokns);
+					free_tokens(p_tokns);
 					return (cname);
 				}
 
@@ -61,7 +61,7 @@ char *find(char *cname)
 			}
 
 			frees_get_env(env_path);
-			double_free(p_tokns);
+			free_tokens(p_tokns);
 		}
 
 		if (stat(cname, &sb) == 0)

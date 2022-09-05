@@ -13,14 +13,14 @@ void _handle_exit(char **u_tokns, char *line)
 
 	if (u_tokns[1] == NULL || (!_strcmp(u_tokns[1], "0")))
 	{
-		double_free(u_tokns);
+		free_tokens(u_tokns);
 		free(line);
 		exit(0);
 	}
 	status = _atoi(u_tokns[1]);
 	if (status != 0)
 	{
-		double_free(u_tokns);
+		free_tokens(u_tokns);
 		free(line);
 		exit(status);
 	}
@@ -32,7 +32,7 @@ void _handle_exit(char **u_tokns, char *line)
 		exit(2);
 	}
 
-	double_free(u_tokns);
+	free_tokens(u_tokns);
 	free(line);
 	exit(EXIT_SUCCESS);
 }

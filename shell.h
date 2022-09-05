@@ -13,14 +13,14 @@
 typedef struct Building
 {
     char *name;
-	int (*f)(char **argv, char **front);
+    void (*f)(char *);
 } Built_cmp_t;
 
 extern char **environ;
 
 /* Built-in Functions */
 void (*Build_cmp(char *))(char *);
-void Zhell_exit(char **u_tokns, char *line);
+void Zhell_exit(char *);
 void Zhell_cd(char *);
 void Zhell_env(char *);
 void Zhell_help();
@@ -30,10 +30,6 @@ char *_strcat(char *dest, char *src);
 int _strlen(const char *s);
 int _strcmp(char *s1, char *s2);
 int _strncmp(const char *s1, const char *s2, size_t len);
-char *_strdup(char *str);
-void strPrint(char *str, int new_line);
-int count_token(char *line, const char *delim);
-char **token_interface(char *line, char *delim, int token_count);
 char *_strdup(char *str);
 int _atoi(char *s);
 int _putchar(char c);
@@ -48,7 +44,7 @@ void _print_env(void);
 void _handle_exit(char **u_tokns, char *line);
 int execBuiltInCommands(char **u_tokns, char *line);
 void frees_get_env(char *env_path);
-void double_free(char **tokns);
+void frees_tokens(char **tokns);
 int exec(char *cname, char **opts);
 char *_getenv(const char *name);
 char **tokenize(char *str, char *del, int len);

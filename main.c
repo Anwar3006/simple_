@@ -39,7 +39,7 @@ int main(void)
 					perror("./hsh");
 			}
 
-			double_free(u_tokns);
+			free_tokens(u_tokns);
 		}
 	}
 
