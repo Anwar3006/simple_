@@ -10,6 +10,11 @@
 #include <signal.h>
 #include <stdio.h>
 
+/**
+ * struct Building - A new struct type defining builtin commands.
+ * @name: The name of the builtin command.
+ * @f: A function pointer to the builtin command's function.
+ */
 typedef struct Building
 {
     char *name;
@@ -26,6 +31,7 @@ void Zhell_env(char *);
 void Zhell_help();
 int Built_in(char **, char *);
 
+/* Main Helpers */
 char *_strcat(char *dest, char *src);
 int _strlen(const char *s);
 int _strcmp(char *s1, char *s2);
