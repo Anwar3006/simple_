@@ -1,10 +1,8 @@
-
-#include "shell.h"
+#include "main.h"
 
 /**
-  * main - Entry point to the Shell
-  *
-  * Return: Always zero.
+  *main - Entry point to the Shell
+  *Return: Always zero.
   */
 int main(void)
 {

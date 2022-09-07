@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
   * _print_env - Prints the environment built-in

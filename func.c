@@ -1,11 +1,10 @@
-#include "shell.h"
+#include "main.h"
 
 /**
-  * _strcat - Concatenates two strings
-  * @dest: The destination string
-  * @src: The source string
-  *
-  * Return: A pointer to the resulting string dest
+  *_strcat - Concatenates two strings
+  *@dest: The destination string
+  *@src: The source string
+  *Return: A pointer to the resulting string dest
   */
 char *_strcat(char *dest, char *src)
 {
@@ -25,10 +24,9 @@ char *_strcat(char *dest, char *src)
 }
 
 /**
-  * _strlen - Counts the length of a string
-  * @s: The string to counts
-  *
-  * Return: The length of a string
+  *_strlen - Counts the length of a string
+  *@s: The string to counts
+  *Return: The length of a string
   */
 int _strlen(const char *s)
 {
@@ -41,11 +39,10 @@ int _strlen(const char *s)
 }
 
 /**
-  * _strcmp - Compares two strings
-  * @s1: The first string
-  * @s2: The second string
-  *
-  * Return: int value
+  *_strcmp - Compares two strings
+  *@s1: The first string
+  *@s2: The second string
+  *Return: int value
   */
 int _strcmp(char *s1, char *s2)
 {
@@ -79,10 +76,9 @@ int _strcmp(char *s1, char *s2)
 }
 
 /**
-  * _strdup - Duplicate a string
-  * @str: the string to duplicate
-  *
-  * Return: the string duplicated
+  *_strdup - Duplicate a string
+  *@str: the string to duplicate
+  *Return: the string duplicated
   */
 char *_strdup(char *str)
 {
@@ -108,10 +104,9 @@ char *_strdup(char *str)
 }
 
 /**
-  * _atoi - Convert a string to an integer.
-  * @s: The pointer to convert
-  *
-  * Return: A integer
+  *_atoi - Convert a string to an integer.
+  *@s: The pointer to convert
+  *Return: A integer
   */
 int _atoi(char *s)
 {
@@ -141,10 +136,10 @@ int _atoi(char *s)
 }
 
 /**
- * strPrint - Prints a string character by character.
- * @str: String to be printed. If the string is NULL it will print (null)
- * @new_line: If integer is 0 a new line will be printed. Otherwise a new line
- * will not be printed.
+ *strPrint - Prints a string character by character.
+ *@str: String to be printed. If the string is NULL it will print (null)
+ *@new_line: If integer is 0 a new line will be printed. Otherwise a new line
+ *will not be printed.
  */
 void strPrint(char *str, int new_line)
 {

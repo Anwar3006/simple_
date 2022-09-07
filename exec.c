@@ -1,11 +1,10 @@
-#include "shell.h"
+#include "main.h"
 
 /**
-  * concat_path - Concatenate a path name and a program name
-  * @pathname: The path name to concatenate with the program name
-  * @progname: The program name to place in the path name
-  *
-  * Return: The path name concatenated with the program name
+  *concat_path - Concatenate a path name and a program name
+  *@pathname: The path name to concatenate with the program name
+  *@progname: The program name to place in the path name
+  *Return: The path name concatenated with the program name
   */
 char *concat_path(char *pathname, char *progname)
 {
@@ -25,10 +24,9 @@ char *concat_path(char *pathname, char *progname)
 }
 
 /**
-  * find - Verify if a command is found in the system
-  * @cname: The command name to find in the system
-  *
-  * Return: The path name of the command found or NULL if failed
+  *find - Verify if a command is found in the system
+  *@cname: The command name to find in the system
+  *Return: The path name of the command found or NULL if failed
   */
 char *find(char *cname)
 {
@@ -73,11 +71,10 @@ char *find(char *cname)
 }
 
 /**
-  * exec - Executes a command
-  * @cname: The command to execute
-  * @opts: The options or flags to the command
-  *
-  * Return: A integer status value
+  *exec - Executes a command
+  *@cname: The command to execute
+  *@opts: The options or flags to the command
+  *Return: A integer status value
   */
 int exec(char *cname, char **opts)
 {

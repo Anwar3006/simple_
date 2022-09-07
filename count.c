@@ -1,10 +1,9 @@
-#include "shell.h"
+#include "main.h"
 
 /**
-  * count_input - Counts the words typed by the user
-  * @str: The string that contains the words
-  *
-  * Return: The number of words found in the string
+  *count_input - Counts the words typed by the user
+  *@str: The string that contains the words
+  *Return: The number of words found in the string
   */
 int count_input(char *str)
 {
@@ -27,11 +26,10 @@ int count_input(char *str)
 }
 
 /**
-  * count_delims - Counts delimiters in a string
-  * @str: The string that contains the delimiters
-  * @del: The delimiters to will find in the string
-  *
-  * Return: The number of delimiters in the string
+  *count_delims - Counts delimiters in a string
+  *@str: The string that contains the delimiters
+  *@del: The delimiters to will find in the string
+  *Return: The number of delimiters in the string
   */
 int count_delims(char *str, char *del)
 {

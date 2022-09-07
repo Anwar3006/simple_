@@ -1,10 +1,10 @@
-#include "shell.h"
+#include "main.h"
 
 /**
-  * tokenize - Extract tokens from string
-  * @str: The string to tokenize
-  * @del: The delimiter of tokenization
-  * @len: Tokens number
+  *tokenize - Extract tokens from string
+  *@str: The string to tokenize
+  *@del: The delimiter of tokenization
+  *@len: Tokens number
   *
   * Return: An array of tokens of the string
   */
