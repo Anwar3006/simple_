@@ -22,14 +22,6 @@ typedef struct Building
 
 extern char **environ;
 
-/* Built-in Functions */
-void (*Build_cmp(char *))(char *);
-void Zhell_exit(char *);
-void Zhell_cd(char *);
-void Zhell_env(char *);
-void Zhell_help();
-int Built_in(char **, char *);
-
 /* Main Helpers */
 char *_strcat(char *dest, char *src);
 int _strlen(const char *s);
